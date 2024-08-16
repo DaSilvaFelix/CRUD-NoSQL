@@ -32,7 +32,7 @@ export function enviarForm(element) {
             const posteo = await fetch('http://localhost:3000/alumnos', {method: 'POST',headers: {'Content-Type': 'application/json'},body: JSON.stringify(datos)});
             const data = await posteo.json();
             console.log(data.msg);
-            extracion('http://localhost:3000/alumnos')
+            
             
             
 
