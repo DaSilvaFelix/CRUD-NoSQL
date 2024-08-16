@@ -1,5 +1,6 @@
 import './assets/style/style.css'
 import './assets/js/funtions.js'
+import { enviarForm } from './assets/js/funtions.js';
 document.querySelector('#app').innerHTML = `<div class="container">
     <!-- Vista de Tabla -->
     <div class="table-view">
@@ -36,5 +37,5 @@ document.querySelector('#app').innerHTML = `<div class="container">
     </div>
 </div>
 `;
-
+enviarForm(document.getElementById('studentForm'))
 
