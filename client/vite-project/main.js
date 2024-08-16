@@ -1,24 +1,40 @@
-import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
-
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
+import './assets/style/style.css'
+import './assets/js/funtions.js'
+document.querySelector('#app').innerHTML = `<div class="container">
+    <!-- Vista de Tabla -->
+    <div class="table-view">
+        <h2>Datos del Alumno</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Edad</th>
+                </tr>
+            </thead>
+            <tbody id="studentTable">
+                <!-- Aquí se llenarán los datos -->
+            </tbody>
+        </table>
     </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
 
-setupCounter(document.querySelector('#counter'))
+    <!-- Vista de Ingreso de Datos -->
+    <div class="form-view">
+        <h2>Ingresar Datos del Alumno</h2>
+        <form id="studentForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required>
+
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" required>
+
+            <input type="submit" value="Agregar Alumno">
+        </form>
+    </div>
+</div>
+`;
+
+

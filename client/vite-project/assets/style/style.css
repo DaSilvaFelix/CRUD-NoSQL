@@ -1,0 +1,37 @@
+body {
+  font-family: Arial, sans-serif;
+}
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.table-view, .form-view {
+  margin: 20px 0;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table, th, td {
+  border: 1px solid #ddd;
+}
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+th {
+  background-color: #f4f4f4;
+}
+input[type="text"], input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0 10px;
+  box-sizing: border-box;
+}
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
